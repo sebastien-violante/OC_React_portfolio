@@ -1,0 +1,13 @@
+.imgContainer {
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "slug": "developpeur",
+    "title": "DWWM",
+    "shortDescription": "Formation développeur web et web mobile avec la Wild Code School",
+    "longDescription": "Une formation orientée PHP avec une utilisation du framework Symfony. 5 mois intensifs en full remote et plusieurs projets professionnels concrets",
+    "tags": ["PHP", "POO", "Symfony", "Mysql"],
+    "github": "https://github.com/votre-username/taskflow",
+    "demo": "https://taskflow-demo.vercel.app",
+    "featured": true
+  }
+]

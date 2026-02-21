@@ -1,66 +1,44 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Tag from "../components/Tag/Tag"
+
+const technologies = [
+  "PHP",
+  "Symfony",
+  "Bootstrap",
+  "Twig",
+  "Javascript",
+  "React",
+  "Next.js"
+]
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <div className={styles.hero}>
+      <div className={styles.heroContent}>
+        <h1 className={styles.heroTitle}>
+          Bonjour, je suis <span className={styles.highlight}>Sébastien VIOLANTE</span>
+        </h1>
+        <p className={styles.heroSubtitle}>
+          Développeur Web Full-Stack
+        </p>
+        <p className={styles.heroDescription}>
+          Je crée des applications web modernes, performantes et accessibles
+          avec React, Next.js et Node.js.
+        </p>
+        <div className={styles.heroButtons}>
+          <a href="projets" className={`${styles.btn} ${styles.btnPrimary}`}>
+            Voir mes projets
           </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="contact" className={`${styles.btn} ${styles.btnSecondary}`}>
+            Me contacter
           </a>
         </div>
-      </main>
+        <div className={styles.tagsContainer}>
+          {technologies.map((tech,index) => (
+            <Tag key={index}>{tech}</Tag>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
