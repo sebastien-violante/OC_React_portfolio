@@ -16,7 +16,7 @@ export default function Home() {
     <div className={styles.hero}>
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>
-          Bonjour, je suis <span className={styles.highlight}>Sébastien VIOLANTE</span>
+          Bonjour, je suis <span className={styles.highlight}>John DOE</span>
         </h1>
         <p className={styles.heroSubtitle}>
           Développeur Web Full-Stack
